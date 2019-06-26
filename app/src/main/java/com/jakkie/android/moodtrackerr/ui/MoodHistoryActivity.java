@@ -41,7 +41,7 @@ public class MoodHistoryActivity extends AppCompatActivity {
         moodsRecyclerView = findViewById(R.id.recycler_moods);
         moodsRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true));
 
-        for (int i = 0; i < currentDay; i++) {
+        for (int i = currentDay;i >=0;i--) {
             moods.add(mPreferences.getInt("KEY_MOOD" + i, 3));
             comments.add(mPreferences.getString("KEY_COMMENT" + i, ""));
         }
