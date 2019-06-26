@@ -37,21 +37,42 @@ public class SharedPreferencesHelper {
                 break;
             case 2:
                 preferences.edit().putInt(KEY_MOOD1, moodIndex).apply();
+                preferences.edit().putInt(KEY_MOOD0, MOOD1).apply();
                 break;
             case 3:
                 preferences.edit().putInt(KEY_MOOD2, moodIndex).apply();
+                preferences.edit().putInt(KEY_MOOD1, MOOD2).apply();
+                preferences.edit().putInt(KEY_MOOD0, MOOD1).apply();
                 break;
             case 4:
                 preferences.edit().putInt(KEY_MOOD3, moodIndex).apply();
+                preferences.edit().putInt(KEY_MOOD2, MOOD3).apply();
+                preferences.edit().putInt(KEY_MOOD1, MOOD2).apply();
+                preferences.edit().putInt(KEY_MOOD0, MOOD1).apply();
                 break;
             case 5:
                 preferences.edit().putInt(KEY_MOOD4, moodIndex).apply();
+                preferences.edit().putInt(KEY_MOOD3, MOOD4).apply();
+                preferences.edit().putInt(KEY_MOOD2, MOOD3).apply();
+                preferences.edit().putInt(KEY_MOOD1, MOOD2).apply();
+                preferences.edit().putInt(KEY_MOOD0, MOOD1).apply();
                 break;
             case 6:
                 preferences.edit().putInt(KEY_MOOD5, moodIndex).apply();
+                preferences.edit().putInt(KEY_MOOD4, MOOD5).apply();
+                preferences.edit().putInt(KEY_MOOD3, MOOD4).apply();
+                preferences.edit().putInt(KEY_MOOD2, MOOD3).apply();
+                preferences.edit().putInt(KEY_MOOD1, MOOD2).apply();
+                preferences.edit().putInt(KEY_MOOD0, MOOD1).apply();
                 break;
             case 7:
                 preferences.edit().putInt(KEY_MOOD6, moodIndex).apply();
+                preferences.edit().putInt(KEY_MOOD5, MOOD6).apply();
+                preferences.edit().putInt(KEY_MOOD4, MOOD5).apply();
+                preferences.edit().putInt(KEY_MOOD3, MOOD4).apply();
+                preferences.edit().putInt(KEY_MOOD2, MOOD3).apply();
+                preferences.edit().putInt(KEY_MOOD1, MOOD2).apply();
+                preferences.edit().putInt(KEY_MOOD0, MOOD1).apply();
                 break;
             default:
                 preferences.edit().putInt(KEY_MOOD0, preferences.getInt(KEY_MOOD1, 3)).apply();
@@ -74,21 +95,42 @@ public class SharedPreferencesHelper {
                 break;
             case 2:
                 preferences.edit().putString(KEY_COMMENT1, comment).apply();
+                preferences.edit().putString(KEY_COMMENT0, COMMENT1).apply();
                 break;
             case 3:
                 preferences.edit().putString(KEY_COMMENT2, comment).apply();
+                preferences.edit().putString(KEY_COMMENT1, COMMENT2).apply();
+                preferences.edit().putString(KEY_COMMENT0, COMMENT1).apply();
                 break;
             case 4:
                 preferences.edit().putString(KEY_COMMENT3, comment).apply();
+                preferences.edit().putString(KEY_COMMENT2, COMMENT3).apply();
+                preferences.edit().putString(KEY_COMMENT1, COMMENT2).apply();
+                preferences.edit().putString(KEY_COMMENT0, COMMENT1).apply();
                 break;
             case 5:
                 preferences.edit().putString(KEY_COMMENT4, comment).apply();
+                preferences.edit().putString(KEY_COMMENT3, COMMENT4).apply();
+                preferences.edit().putString(KEY_COMMENT2, COMMENT3).apply();
+                preferences.edit().putString(KEY_COMMENT1, COMMENT2).apply();
+                preferences.edit().putString(KEY_COMMENT0, COMMENT1).apply();
                 break;
             case 6:
                 preferences.edit().putString(KEY_COMMENT5, comment).apply();
+                preferences.edit().putString(KEY_COMMENT4, COMMENT5).apply();
+                preferences.edit().putString(KEY_COMMENT3, COMMENT4).apply();
+                preferences.edit().putString(KEY_COMMENT2, COMMENT3).apply();
+                preferences.edit().putString(KEY_COMMENT1, COMMENT2).apply();
+                preferences.edit().putString(KEY_COMMENT0, COMMENT1).apply();
                 break;
             case 7:
                 preferences.edit().putString(KEY_COMMENT6, comment).apply();
+                preferences.edit().putString(KEY_COMMENT5, COMMENT6).apply();
+                preferences.edit().putString(KEY_COMMENT4, COMMENT5).apply();
+                preferences.edit().putString(KEY_COMMENT3, COMMENT4).apply();
+                preferences.edit().putString(KEY_COMMENT2, COMMENT3).apply();
+                preferences.edit().putString(KEY_COMMENT1, COMMENT2).apply();
+                preferences.edit().putString(KEY_COMMENT0, COMMENT1).apply();
                 break;
             default:
                 preferences.edit().putString(KEY_COMMENT0, preferences.getString(KEY_COMMENT1, "")).apply();
